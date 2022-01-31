@@ -37,3 +37,32 @@
     width: 100%;
     font-size: 1.2rem;
 }
+
+.correct {
+    background-color: #05F39A;
+}
+
+.incorrect {
+    background-color: #FF5733 ;
+}
+
+.alert {
+    background-color: tan;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    /* put things side by side horizontally and justify in center */
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
