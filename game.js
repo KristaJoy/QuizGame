@@ -1,6 +1,6 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text")); //gets an array
-const questionCounterText = document.getElementById("questionCounter");
+const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 
 let currentQuestion = {};
@@ -52,7 +52,7 @@ let questions = [
         choice2: "Navajo",
         choice3: "Sioux",
         choice4: "Yakima",
-        answer: 4,
+        answer: 1,
         caption: "The land was inhabited for many centuries by two bands of indigenous Chinook people — the Multnomah and the Clackamas. The Chinook people occupying the land were first documented in 1805 by Meriwether Lewis and William Clark. Before its European settlement, the Portland Basin of the lower Columbia River and Willamette River valleys had been one of the most densely populated regions on the Pacific Coast. (wikipedia.org)"
     },
     {
@@ -115,11 +115,17 @@ startGame = () => {
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score);
         //go to the end of the page
         return window.location.assign("/end.html");
     }
+    
+    //question progress text and bar
+    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+
     questionCounter++; //increment by one
-    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+
 
     const questionIndex = Math.floor((Math.random() * availableQuestions.length));
         currentQuestion = availableQuestions[questionIndex];
@@ -150,7 +156,7 @@ choices.forEach(choice => {
         selectedChoice.parentElement.classList.add(classToApply);
         setTimeout( () => {
             selectedChoice.parentElement.classList.remove(classToApply);
-            alert(currentQuestion.caption);
+            // alert(currentQuestion.caption);
             getNewQuestion();
         }, 1000);
 
