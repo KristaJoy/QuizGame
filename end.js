@@ -3,7 +3,9 @@ const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
-const highScores = JSON.parse(localStorage.getItem("highScores")) || []; //get what's there or initial empty array if nothing yet
+const highScores = JSON.parse(localStorage.getItem("highScores")) || []; 
+//JSON.parse to turn into String
+//get what's there or initial empty array if nothing yet otherwise returns null
 
 const MAX_HIGH_SCORES = 5;
 
@@ -24,10 +26,11 @@ saveHighScore = (e) => {
     
     /// push to scores, sort scores, limit display to 5 scores
     
-    highScores.push(score); 
-    highScores.sort( (a,b) => b.score - a.score); //if b score is higher than a put b before a
-    highScores.splice(5);
+    highScores.push(score); // add to list
+    highScores.sort( (a,b) => b.score - a.score); //if b score is higher than a return b before a
+    highScores.splice(5); // limit list to index 5
 
-    localStorage.setItem('highScores', JSON.stringify(highScores));
-    console.log(highScores);
+    localStorage.setItem('highScores', JSON.stringify(highScores)); //Stringify into JSON so it can be saved as a string
+    //console.log(highScores);
+    window.location.assign('/highscores');
 }
