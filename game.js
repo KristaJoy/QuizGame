@@ -17,7 +17,7 @@ let questions = [
         choice3: "January 1, 1826",
         choice4: "August 15, 1872",
         answer: 2,
-        caption: "Happy Valentine's Oregon xo!"
+        caption: "Happy Valentine's to the 33rd State! Oregon has the only double-sided flag in the US, showing the State seal on one side, and the State animal, a Beaver, on the reverse. XOXO"
     },
     {
         question: "What is the capital of Oregon?",
@@ -39,12 +39,12 @@ let questions = [
     },
     {
         question: "Portland's nickname is:",
-        choice1: "The City of Roses",
+        choice1: "City of Roses",
         choice2: "Timber City",
         choice3: "Forest Park",
         choice4: "Coffeetown",
         answer: 1,
-        caption: "Also referred to as 'PDX', 'Stumptown', 'Rose City', 'Rip City', 'Bridgetown', and 'P-town'."
+        caption: "See roses around town at the International Rose Test Garden, the Ladd's Addition neighborhood, and Peninsula Park. Other unofficial nicknames are: 'PDX' referencing the airport code, 'Stumptown' from the logging industry, 'Rip City' for the TrailBlazers, 'Bridgetown' for its 10 bridges over the Willamette river, and 'P-town'."
     },
     {
         question: "Before European settlement, the Portland basin area was populated by which indigenous group?",
@@ -62,16 +62,16 @@ let questions = [
         choice3: "Patrick Star",
         choice4: "Wile E. Coyote",
         answer: 2,
-        caption: "Hi-Diddly-Ho, neighborinos! — Crossing I-405 at Flanders St., the bridge honors 'The Simpson's' character created by Portland native Matt Groening."
+        caption: "'Hi-Diddly-Ho, neighborinos!' Crossing I-405 at Flanders St., the bridge honors 'The Simpson's' character created by Portland native Matt Groening."
     },
     {
-        question: "While in Portland you can visit both the biggest one of these in a US city, as well as one that is the smallest in the world.",
+        question: "While in Portland you can visit both the biggest and smallest one of these.",
         choice1: "Parks",
         choice2: "Waterfalls",
         choice3: "Museums",
         choice4: "Coffee cups",
         answer: 1,
-        caption: "More than 5,000 acres, Forest Park is the largest wilderness park within city limits in the United States, and Mill Ends Park is the smallest park in the world measuring about 2 feet wide."
+        caption: "Covering more than 5,000 acres, Forest Park is the largest wilderness park within city limits in the United States. Mill Ends Park is the smallest park in the world measuring about 2 feet wide."
     },
     {
         question: "Portland has this within city limits:",
@@ -80,7 +80,7 @@ let questions = [
         choice3: "A volcano",
         choice4: "Goat farm",
         answer: 3,
-        caption: "Mt. Tabor is an exitinct volcano with a park and walking trails."
+        caption: "Mt. Tabor is an exitinct volcano which is home to a park with walking trails, large decommissioned open water reservoirs, and a beautiful view over the city."
     },
     {
         question: "Portland was named on a coin toss between being named after Portland, Maine, or this city:",
@@ -98,13 +98,22 @@ let questions = [
         choice3: "Tour de France",
         choice4: "The Stanley Cup",
         answer: 4,
-        caption: "The Portland Rosebuds lost to the Montreal Canadiens in the 1916 Stanley Cup final."
+        caption: "The Portland Rosebuds won the league championship and their name is on the Stanley Cup, but lost to the Montreal Canadiens in the 1916 Stanley Cup final. The team folded after four seasons. The team was revived in 1925 but was sold the next season to form the Chiago Black Hawks expansion team."
+    },
+    {
+        question: "What game-changing product was invented in Portland?",
+        choice1: "Velcro",
+        choice2: "Phillips Screw",
+        choice3: "Fluorescent Bulb",
+        choice4: "Plexiglass",
+        answer: 2,
+        caption: "John P. Thompson patented a self-centering screw (1932) and screw driver (1933) ideal for manufacuturing. In 1935 he sold the patents to Henry Frank Phillips who was able to refine the designs and then popularize the screw."
     }
 ];
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 9;
+const MAX_QUESTIONS = questions.length;
 
 startGame = () => {
     questionCounter = 0;
