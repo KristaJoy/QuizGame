@@ -28,14 +28,15 @@
 .caption-container {
     display: flex;
     margin-bottom: 0.5rem;
+    padding: 1.5rem;
     width: 100%;
     font-size: 1.8rem;
     background-color: #f5f7de;
 }
 .caption-text {
-    padding: 1.5rem;
+    padding: 2rem;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .correct {
@@ -78,4 +79,18 @@
     height: 3.4rem;
     background-color: #52ABFC;
     width: 0%;
+}
+
+.button {
+    display: block;
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #52ABFC;
+    border-style: hidden;
+    color: white;
+    float: right;
+}
+
+#toggle {
+    display: none;
 }

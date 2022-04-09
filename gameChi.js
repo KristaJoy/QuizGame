@@ -2,6 +2,9 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text")); //gets an array
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
+const captionText = document.getElementById("caption");
+const cap = document.getElementById("toggle");
+const btn = document.getElementById("btn");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -172,13 +175,19 @@ choices.forEach(choice => {
             incrementScore(CORRECT_BONUS);
         }
         selectedChoice.parentElement.classList.add(classToApply);
-        setTimeout( () => {
+        
+        
+            //alert(currentQuestion.caption);//////
+        captionText.innerText = currentQuestion.caption;
+        cap.style.display = "block";
+        btn.addEventListener("click", function() {
+            cap.style.display = "none";
             selectedChoice.parentElement.classList.remove(classToApply);
-            // alert(currentQuestion.caption);
             getNewQuestion();
-        }, 1000);
+        });
 
     });
+
 });
 
 // keep track of the score
