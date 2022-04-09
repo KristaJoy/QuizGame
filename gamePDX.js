@@ -80,7 +80,7 @@ let questions = [
         choice3: "A volcano",
         choice4: "Goat farm",
         answer: 3,
-        caption: "Mt. Tabor is an exitinct volcano which is home to a park with walking trails, large decommissioned open water reservoirs, and a beautiful view over the city."
+        caption: "Mt. Tabor is an extinct volcano which is home to a park with walking trails, large decommissioned open water reservoirs, and a beautiful view over the city."
     },
     {
         question: "Portland was named on a coin toss between being named after Portland, Maine, or this city:",
@@ -98,7 +98,7 @@ let questions = [
         choice3: "Tour de France",
         choice4: "The Stanley Cup",
         answer: 4,
-        caption: "The Portland Rosebuds won the league championship and their name is on the Stanley Cup, but lost to the Montreal Canadiens in the 1916 Stanley Cup final. The team folded after four seasons. The team was revived in 1925 but was sold the next season to form the Chiago Black Hawks expansion team."
+        caption: "The Portland Rosebuds won the league championship and their name is on the Stanley Cup, but lost to the Montreal Canadiens in the 1916 Stanley Cup final. The team folded after four seasons. The team was revived in 1925 but was sold the next season to form the Chicago Blackhawks expansion team."
     },
     {
         question: "What game-changing product was invented in Portland?",
@@ -107,12 +107,21 @@ let questions = [
         choice3: "Fluorescent Bulb",
         choice4: "Plexiglass",
         answer: 2,
-        caption: "John P. Thompson patented a self-centering screw (1932) and screw driver (1933) ideal for manufacuturing. In 1935 he sold the patents to Henry Frank Phillips who was able to refine the designs and then popularize the screw."
+        caption: "John P. Thompson patented a self-centering screw (1932) and screw driver (1933) ideal for manufacturing. In 1935 he sold the patents to Henry Frank Phillips who was able to refine the designs and then popularize the screw."
+    },
+    {
+        question: "The contiguous national average for annual precipitation is 30.3 inches, how much does Portland get?",
+        choice1: "43.7",
+        choice2: "29.5",
+        choice3: "55.8",
+        choice4: "39.3",
+        answer: 1,
+        caption: "Portland is known for being rainy but cities like Houston (55.6 in), New Orleans (63.4 in), and Atlanta (50.4 in) get more."
     }
 ];
 
 //CONSTANTS
-const CORRECT_BONUS = 10;
+const CORRECT_BONUS = 1;
 const MAX_QUESTIONS = questions.length;
 
 startGame = () => {

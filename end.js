@@ -9,7 +9,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 const MAX_HIGH_SCORES = 5;
 
-finalScore.innerText = mostRecentScore; //score is stored as string in local storage
+finalScore.innerText = "You scored " + mostRecentScore + " out of 12"; //score is stored as string in local storage
 
 
 username.addEventListener('keyup', () => {

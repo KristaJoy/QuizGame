@@ -12,107 +12,116 @@ let availableQuestions = [];
 let questions = [
     {
         question: "When did Illinois become a state?",
-        choice1: "March 13, 1901",
-        choice2: "February 14, 1859",
-        choice3: "January 1, 1826",
-        choice4: "August 15, 1872",
-        answer: 2,
-        caption: "Happy Valentine's to the 33rd State! Illinois has the only double-sided flag in the US, showing the State seal on one side, and the State animal, a Beaver, on the reverse. XOXO"
+        choice1: "December 3, 1818",
+        choice2: "January 23, 1801",
+        choice3: "June 9, 1836",
+        choice4: "March 7, 1823",
+        answer: 1,
+        caption: "Illinois is the 21st state and features the state seal on its flag. The first state capital was Kaskaskia, then moved to Vandalia, and finally to Springfield in 1837."
     },
     {
-        question: "What is the capital of Illinois?",
-        choice1: "Chicago",
-        choice2: "Eugene",
-        choice3: "Salem",
-        choice4: "Illinois City",
+        question: "Chicago gets its name from which wild plant?",
+        choice1: "Fennel",
+        choice2: "Chard",
+        choice3: "Onion",
+        choice4: "Grass",
         answer: 3,
-        caption: "Illinois City was the first capital and the end of the Illinois Trail when Illinois was a Territory. Salem became its capital in 1852."
+        caption: "Chicago is derived from a French rendering of the indigenous Miami-Illinois word shikaakwa for a wild relative of the onion."
     },
     {
-        question: "In 1873 what destroyed much of downtown Chicago?",
-        choice1: "Flooding",
-        choice2: "Animal Rampage",
-        choice3: "Wind Storm",
-        choice4: "Fire",
+        question: "Who was the first non-indigenous settler of Chicago?",
+        choice1: "William B. Ogden",
+        choice2: "Jean Baptiste Point du Sable",
+        choice3: "Abraham Lincoln",
+        choice4: "René LaSalle",
+        answer: 2,
+        caption: "Considered the Founder of Chicago, Point du Sable's settlement site is marked near the Chicago River on Michigan Avenue. Little is known of him other than his African descent."
+    },
+    {
+        question: "The City of Chicago completed what historic project in 1900?",
+        choice1: "Rebuilt the city after a fire wiped much of it out.",
+        choice2: "The United State's first draw bridge.",
+        choice3: "The first 20-story building in the world.",
+        choice4: "Reversing the flow of the Chicago River.",
         answer: 4,
-        caption: "Early morning August 2, 1873 a fire started near SW 1st and Taylor at a furniture store, and destroyed over 20 square blocks."
+        caption: "Using canal locks the main stem (into the lake) and south branch of the river reversed course. The system they created was named a 'Civil Engineering Monument of the Millennium' by the American Society of Civil Engineers (ASCE) in 1999."
     },
     {
-        question: "Chicago's nickname is:",
-        choice1: "City of Roses",
-        choice2: "Timber City",
-        choice3: "Forest Park",
-        choice4: "Coffeetown",
+        question: "The Lincoln Park Zoo was founded in 1868 with the gift of which animals?",
+        choice1: "Swans",
+        choice2: "Bears",
+        choice3: "Ostriches",
+        choice4: "Deer",
         answer: 1,
-        caption: "See roses around town at the International Rose Test Garden, the Ladd's Addition neighborhood, and Peninsula Park. Other unofficial nicknames are: 'PDX' referencing the airport code, 'Stumptown' from the logging industry, 'Rip City' for the TrailBlazers, 'Bridgetown' for its 10 bridges over the Willamette river, and 'P-town'."
+        caption: "Lincoln Park Commissioners were given two pairs of swans by New York Central Park's Board of Commissioners. Lincoln Park Zoo is the only free zoo in the country."
     },
     {
-        question: "Before European settlement, the Chicago basin area was populated by which indigenous group?",
-        choice1: "Chinook",
-        choice2: "Navajo",
-        choice3: "Sioux",
-        choice4: "Yakima",
-        answer: 1,
-        caption: "The land was inhabited for many centuries by two bands of indigenous Chinook people — the Multnomah and the Clackamas. The Chinook people occupying the land were first documented in 1805 by Meriwether Lewis and William Clark. Before its European settlement, the Chicago Basin of the lower Columbia River and Willamette River valleys had been one of the most densely populated regions on the Pacific Coast. (wikipedia.org)"
-    },
-    {
-        question: "Chicago has a pedestrian bridge dedicated to which cartoon character?",
-        choice1: "Mickey Mouse",
-        choice2: "Ned Flanders",
-        choice3: "Patrick Star",
-        choice4: "Wile E. Coyote",
+        question: "The Palmer House Hotel's kitchen created which treat for the 1893 Chicago World's Fair?",
+        choice1: "Moon Pie",
+        choice2: "Brownie",
+        choice3: "Cheesecake",
+        choice4: "Waffle Cone",
         answer: 2,
-        caption: "'Hi-Diddly-Ho, neighborinos!' Crossing I-405 at Flanders St., the bridge honors 'The Simpson's' character created by Portland native Matt Groening."
+        caption: "Find the original brownie recipe on the hotel's website! Other famous food introduced at the World's Fair? Pabst Blue Ribbon, Cracker Jacks, Vienna Beef hot dogs, Aunt Jemima Pancake Mix, Wrigley gum, and Heinz condiments."
     },
     {
-        question: "While in Portland you can visit both the biggest and smallest one of these.",
-        choice1: "Parks",
-        choice2: "Waterfalls",
-        choice3: "Museums",
-        choice4: "Coffee cups",
+        question: "The Pledge of Allegiance was written in Chicago in 1892 to:",
+        choice1: "Help Sell American Flags",
+        choice2: "Celebrate America's Achievements",
+        choice3: "Unify the Public School System",
+        choice4: "Celebrate the 50 States of the Flag",
         answer: 1,
-        caption: "Covering more than 5,000 acres, Forest Park is the largest wilderness park within city limits in the United States. Mill Ends Park is the smallest park in the world measuring about 2 feet wide."
+        caption: "The Youth's Companion magazine sold American flags to schools and wanted to sell more flags and teach students a lesson in patriotism. This was done to celebrate 400 years of Columbus and the Chicago Columbian Exposition (World Fair). Notably, the original pledge did not have the phrase 'under God' but was added by Congress in 1954."
     },
     {
-        question: "Portland has this within city limits:",
-        choice1: "Salmon fishery",
-        choice2: "Largest waterfall in Illinois",
-        choice3: "A volcano",
-        choice4: "Goat farm",
+        question: "Chicago is home to approximately how many people?",
+        choice1: "4.2 million",
+        choice2: "1.9 million",
+        choice3: "2.7 million",
+        choice4: "3.5 million",
         answer: 3,
-        caption: "Mt. Tabor is an exitinct volcano which is home to a park with walking trails, large decommissioned open water reservoirs, and a beautiful view over the city."
+        caption: "The third largest city in the United States, Chicago is home to about 2.7 million people — the Chicagoland metropolitan area about 9.5 million."
     },
     {
-        question: "Portland was named on a coin toss between being named after Portland, Maine, or this city:",
-        choice1: "Providence",
-        choice2: "Philadelphia",
-        choice3: "Boston",
-        choice4: "Chicago",
+        question: "What sport was invented in Chicago?",
+        choice1: "Pickle Ball",
+        choice2: "Boxing",
+        choice3: "Softball",
+        choice4: "Curling",
         answer: 3,
-        caption: "Portland's two founders did a best of 3 coin toss — Francis Pettygrove who was from Portland, Maine, and Asa Lovejoy who was from Boston, Massachusetts."
+        caption: "What's now known as softball was first played Thanksgiving Day, 1887. It took place between Yale and Harvard University supporters gathered to hear the outcome of a football game at a boat club."
     },
     {
-        question: "Portland had the first American team to compete in what event?",
-        choice1: "Rugby World Cup",
-        choice2: "Cricket World Cup",
-        choice3: "Tour de France",
-        choice4: "The Stanley Cup",
+        question: "Which of these is not one of Chicago's nicknames?",
+        choice1: "The Windy City",
+        choice2: "Second City",
+        choice3: "The White City",
+        choice4: "The Garden City",
         answer: 4,
-        caption: "The Portland Rosebuds won the league championship and their name is on the Stanley Cup, but lost to the Montreal Canadiens in the 1916 Stanley Cup final. The team folded after four seasons. The team was revived in 1925 but was sold the next season to form the Chiago Black Hawks expansion team."
+        caption: "While Chicago's motto is 'urbs in horto' or 'city in a garden' it isn't a nickname, but does celebrate the city's impressive park system."
     },
     {
-        question: "What game-changing product was invented in Portland?",
-        choice1: "Velcro",
-        choice2: "Phillips Screw",
-        choice3: "Fluorescent Bulb",
-        choice4: "Plexiglass",
+        question: "If you use this topping on your hot dog in Chicago you might make the chef cringe:",
+        choice1: "Peppers",
+        choice2: "Ketchup",
+        choice3: "Mustard",
+        choice4: "Tomato Slice",
         answer: 2,
-        caption: "John P. Thompson patented a self-centering screw (1932) and screw driver (1933) ideal for manufacuturing. In 1935 he sold the patents to Henry Frank Phillips who was able to refine the designs and then popularize the screw."
+        caption: "Some say the sweetness of ketchup masks the flavor of the meat. You'd see a true Chicago-style dog made with a squirt of mustard, chopped white onions, bright green sweet pickle relish, a dill pickle spear, tomato slice or wedges, pickled sport peppers, and a dash of celery salt."
+    },
+    {
+        question: "What event was first televised from Chicago?",
+        choice1: "Presidential debate",
+        choice2: "Thanksgiving Day parade",
+        choice3: "Baseball game",
+        choice4: "Nuclear fission",
+        answer: 1,
+        caption: "The first televised presidential debate between Senator John F. Kennedy and Vice President Richard Nixon was hosted in the Chicago CBS studios. Although, four years before this Eleanor Roosevelt debated Senator Margaret Chase Smith on television debating Adlai Stevenson vs Dwight Eisenhower for president."
     }
 ];
 
 //CONSTANTS
-const CORRECT_BONUS = 10;
+const CORRECT_BONUS = 1;
 const MAX_QUESTIONS = questions.length;
 
 startGame = () => {
