@@ -4,7 +4,7 @@ const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const captionText = document.getElementById("caption");
 const cap = document.getElementById("toggle");
-const btn = document.getElementById("btn");
+const next = document.getElementById("next");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -20,7 +20,7 @@ let questions = [
         choice3: "January 1, 1826",
         choice4: "August 15, 1872",
         answer: 2,
-        caption: "FEBRUARY 14, 1859:  Happy Valentine's to the 33rd State! Oregon has the only double-sided flag in the US, showing the State seal on one side, and the State animal, a Beaver, on the reverse. XOXO"
+        caption: "<p><strong>FEBRUARY 14, 1859:  </strong>Happy Valentine's to the 33rd State! Oregon has the only double-sided flag in the US, showing the State seal on one side, and the State animal, a Beaver, on the reverse.</p>"
     },
     {
         question: "What is the capital of Oregon?",
@@ -29,7 +29,7 @@ let questions = [
         choice3: "Salem",
         choice4: "Oregon City",
         answer: 3,
-        caption: "SALEM:  Oregon City was the first capital and the end of the Oregon Trail when Oregon was a Territory. Salem became its capital in 1852."
+        caption: "<p><strong>SALEM:  </strong>Oregon City was the first capital and the end of the Oregon Trail when Oregon was a Territory. Salem became its capital in 1852.</p>"
     },
     {
         question: "In 1873 what destroyed much of downtown Portland?",
@@ -38,7 +38,7 @@ let questions = [
         choice3: "Wind Storm",
         choice4: "Fire",
         answer: 4,
-        caption: "FIRE:  Early morning August 2, 1873 a fire started near SW 1st and Taylor at a furniture store, and destroyed over 20 square blocks."
+        caption: "<p><strong>FIRE:  </strong>Early morning August 2, 1873 a fire started near SW 1st and Taylor at a furniture store, and destroyed over 20 square blocks.</p>"
     },
     {
         question: "Portland's nickname is:",
@@ -47,7 +47,7 @@ let questions = [
         choice3: "Forest Park",
         choice4: "Coffeetown",
         answer: 1,
-        caption: "CITY OF ROSES:  See roses around town at the International Rose Test Garden, the Ladd's Addition neighborhood, and Peninsula Park. Other unofficial nicknames are: 'PDX' referencing the airport code, 'Stumptown' from the logging industry, 'Rip City' for the TrailBlazers, 'Bridgetown' for its 10 bridges over the Willamette river, and 'P-town'."
+        caption: "<p><strong>CITY OF ROSES:  </strong>See roses around town at the International Rose Test Garden, the Ladd's Addition neighborhood, and Peninsula Park. Other unofficial nicknames are: 'PDX' referencing the airport code, 'Stumptown' from the logging industry, 'Rip City' for the TrailBlazers, 'Bridgetown' for its 10 bridges over the Willamette river, and 'P-town'.</p>"
     },
     {
         question: "Before European settlement, the Portland basin area was populated by which indigenous group?",
@@ -56,7 +56,7 @@ let questions = [
         choice3: "Sioux",
         choice4: "Yakima",
         answer: 1,
-        caption: "CHINOOK:  The land was inhabited for many centuries by two bands of indigenous Chinook people — the Multnomah and the Clackamas. The Chinook people occupying the land were first documented in 1805 by Meriwether Lewis and William Clark. Before its European settlement, the Portland Basin of the lower Columbia River and Willamette River valleys had been one of the most densely populated regions on the Pacific Coast. (wikipedia.org)"
+        caption: "<p><strong>CHINOOK:  </strong>The land was inhabited for many centuries by two bands of indigenous Chinook people — the Multnomah and the Clackamas. The Chinook people occupying the land were first documented in 1805 by Meriwether Lewis and William Clark. Before its European settlement, the Portland Basin of the lower Columbia River and Willamette River valleys had been one of the most densely populated regions on the Pacific Coast.</p>"
     },
     {
         question: "Portland has a pedestrian bridge dedicated to which cartoon character?",
@@ -65,7 +65,7 @@ let questions = [
         choice3: "Patrick Star",
         choice4: "Wile E. Coyote",
         answer: 2,
-        caption: "NED FLANDERS:  'Hi-Diddly-Ho, neighborinos!' Crossing I-405 at Flanders St., the bridge honors 'The Simpson's' character created by Portland native Matt Groening."
+        caption: "<p><strong>NED FLANDERS:  </strong>'Hi-Diddly-Ho, neighborinos!' Crossing I-405 at Flanders St., the bridge honors 'The Simpson's' character created by Portland native Matt Groening. He graduated from Lincoln High School in SW Portland.</p>"
     },
     {
         question: "While in Portland you can visit both the biggest and smallest one of these.",
@@ -74,7 +74,7 @@ let questions = [
         choice3: "Museums",
         choice4: "Coffee cups",
         answer: 1,
-        caption: "PARKS: Covering more than 5,000 acres, Forest Park is the largest wilderness park within city limits in the United States. Mill Ends Park is the smallest park in the world measuring about 2 feet wide."
+        caption: "<p><strong>PARKS:  </strong>Covering more than 5,000 acres, Forest Park is the largest wilderness park within city limits in the United States. Since 1971 The Guinness Book of Records has recognized Mill Ends Park as the smallest park in the world, measuring about 2 feet across.</p>"
     },
     {
         question: "Portland has this within city limits:",
@@ -83,7 +83,7 @@ let questions = [
         choice3: "A volcano",
         choice4: "Goat farm",
         answer: 3,
-        caption: "A VOLCANO:  Mt. Tabor is an extinct volcano which is home to a park with walking trails, large decommissioned open water reservoirs, and a beautiful view over the city."
+        caption: "<p><strong>A VOLCANO:  </strong>Mt. Tabor is an extinct volcano which is home to a park with walking trails, large decommissioned open water reservoirs, and a beautiful view over the city. Mt. Tabor was named by an Oregon CIty pioneer's son after the Mt. Tabor near Nazareth, Israel.</p>"
     },
     {
         question: "Portland was named on a coin toss between being named after Portland, Maine, or this city:",
@@ -92,7 +92,7 @@ let questions = [
         choice3: "Boston",
         choice4: "Chicago",
         answer: 3,
-        caption: "BOSTON:  Portland's two founders did a best of 3 coin toss — Francis Pettygrove who was from Portland, Maine, and Asa Lovejoy who was from Boston, Massachusetts."
+        caption: "<p><strong>BOSTON:  </strong>In 1845 Portland's two founders did a best of 3 coin toss — Francis Pettygrove who was from Portland, Maine, and Asa Lovejoy who was from Boston, Massachusetts. Streets in the Alphabet District of Portland are named after many city founders, NW Pettygrove St. and NW Lovejoy St. among them. </p>"
     },
     {
         question: "Portland had the first American team to compete in what event?",
@@ -101,7 +101,7 @@ let questions = [
         choice3: "Tour de France",
         choice4: "The Stanley Cup",
         answer: 4,
-        caption: "THE STANLEY CUP:  The Portland Rosebuds won the league championship and their name is on the Stanley Cup, but lost to the Montreal Canadiens in the 1916 Stanley Cup final. The team folded after four seasons. The team was revived in 1925 but was sold the next season to form the Chicago Blackhawks expansion team."
+        caption: "<p><strong>THE STANLEY CUP:  </strong>The Portland Rosebuds won the league championship and their name is on the Stanley Cup, but lost to the Montreal Canadiens in the 1916 Stanley Cup final. The team folded after four seasons. The team was revived in 1925 but was sold the next season to form the Chicago Blackhawks expansion team.</p>"
     },
     {
         question: "What game-changing product was invented in Portland?",
@@ -110,16 +110,16 @@ let questions = [
         choice3: "Fluorescent Bulb",
         choice4: "Plexiglass",
         answer: 2,
-        caption: "PHILLIPS SCREW:  John P. Thompson patented a self-centering screw (1932) and screw driver (1933) ideal for manufacturing. In 1935 he sold the patents to Henry Frank Phillips who was able to refine the designs and then popularize the screw."
+        caption: "<p><strong>PHILLIPS SCREW:  </strong>John P. Thompson patented a self-centering screw (1932) and screw driver (1933) ideal for manufacturing. In 1935 he sold the patents to Henry Frank Phillips who was able to refine the designs and then popularize the screw.</p>"
     },
     {
-        question: "The contiguous national average for annual precipitation is 30.3 inches, how much does Portland get?",
+        question: "The contiguous national average for annual precipitation is 30.3 inches, how much rain does Portland get?",
         choice1: "43.7",
         choice2: "29.5",
         choice3: "55.8",
         choice4: "39.3",
         answer: 1,
-        caption: "43.7:  Portland is known for being rainy but cities like Houston (55.6 in), New Orleans (63.4 in), and Atlanta (50.4 in) get more."
+        caption: "<p><strong>43.7:  </strong>Portland is known for being rainy, but cities like Houston (55.6 in), New Orleans (63.4 in), and Atlanta (50.4 in) get more. More likely to drizzle than downpour Portland does have some of the most days <i>with</i> rain.</p>"
     }
 ];
 
@@ -128,7 +128,7 @@ const CORRECT_BONUS = 1;
 const MAX_QUESTIONS = questions.length;
 
 startGame = () => {
-    questionCounter = 0;
+    questionCounter = 1;
     score = 0;
     availableQuestions = [ ... questions]; //make copy of questions
     getNewQuestion();
@@ -159,6 +159,7 @@ getNewQuestion = () => {
 
         availableQuestions.splice(questionIndex, 1);
         acceptingAnswers = true;
+        console.log(availableQuestions);
 };
 
 choices.forEach(choice => {
@@ -176,18 +177,23 @@ choices.forEach(choice => {
         }
         selectedChoice.parentElement.classList.add(classToApply);
         
-        
-            //alert(currentQuestion.caption);//////
-        captionText.innerText = currentQuestion.caption;
-        cap.style.display = "block";
-        btn.addEventListener("click", function() {
-            cap.style.display = "none";
-            selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
-        });
+        captionText.innerHTML = currentQuestion.caption; //show text for caption
+        cap.style.display = "block"; //unhide the div with caption
 
+        console.log(selectedChoice.parentElement);
     });
 
+});
+
+next.addEventListener("click", function() {
+    cap.style.display = "none";
+    choices.forEach(choice =>{
+        choice.parentElement.classList.remove("correct");
+    })
+    choices.forEach(choice =>{
+        choice.parentElement.classList.remove("incorrect");
+    })
+    getNewQuestion();
 });
 
 // keep track of the score

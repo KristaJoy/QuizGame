@@ -2,21 +2,21 @@
     display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
-    font-size: 1.8rem;
-    border: 0.1rem solid rgba(86, 165,235, 0.25);
+    font-size: 2.1rem;
+    border: 0.1rem solid #00C6CA;
     background-color: white;
 }
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(94, 243, 154, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 #c0f3f7;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
 
 .choice-prefix {
     padding: 1.5rem 2.5rem;
-    background-color: #52ABFC;
+    background-color: #2d79ca;
     color: white;
 }
 
@@ -28,27 +28,22 @@
 .caption-container {
     display: flex;
     margin-bottom: 0.5rem;
-    padding: 1.5rem;
-    width: 100%;
-    font-size: 1.8rem;
-    background-color: #f5f7de;
-}
-.caption-text {
     padding: 2rem;
     width: 100%;
-    font-size: 1.4rem;
+    background-color: #e2f8fa;
+}
+.caption-text {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.7rem;
 }
 
 .correct {
-    background-color: #05F39A;
+    background-color: #5de69f;
 }
 
 .incorrect {
-    background-color: #FF5733 ;
-}
-
-.alert {
-    background-color: tan;
+    background-color: #fab164 ;
 }
 
 /* HUD */
@@ -61,7 +56,7 @@
 
 .hud-prefix {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .hud-main-text {
@@ -69,26 +64,33 @@
 }
 
 #progressBar {
-    width: 20rem;
+    width: 17rem;
     height: 4rem;
-    border: 0.3rem solid #52ABFC;
+    border: 0.3rem solid #00C6CA;
     margin-top: 1.5rem;
 }
 
 #progressBarFull {
     height: 3.4rem;
-    background-color: #52ABFC;
+    background-color: #00C6CA;
     width: 0%;
 }
 
 .button {
     display: block;
     width: 5rem;
-    height: 2.5rem;
-    background-color: #52ABFC;
+    height: 3.5rem;
+    background-color: #00C6CA;
     border-style: hidden;
     color: white;
     float: right;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.2rem 0.6rem 0 #c0f3f7;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 
 #toggle {

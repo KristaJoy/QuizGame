@@ -1,5 +1,5 @@
 :root {
-    background-color: #EDF2B8;
+    background-color: #effeff;
     font-size: 62.5%; 
     /* //default is 16px so this makes it 10px */
 
@@ -10,7 +10,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333
+    color: rgb(79, 79, 79);
 }
 
 h1,
@@ -22,7 +22,7 @@ h4 {
 
 h1 {
     font-size: 5.4rem;
-    color: #52ABFC;    ;
+    color: #0094CA;  
     margin-bottom: 5rem;
 }
 
@@ -32,9 +32,10 @@ h1 > span {
 }
 
 h2 {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     margin-bottom: 4rem;
     font-weight: 700; 
+    color: rgb(79, 79, 79);
 }
 
 h3 {
@@ -48,8 +49,9 @@ h3 {
     width: 100vw;
     height: 100vh;
     display: flex;
+    padding-top: 4rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     max-width: 80rem;
     margin: 0 auto;
 }
@@ -86,17 +88,17 @@ h3 {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #52ABFC;
+    border: 0.1rem solid #00C6CA;
     margin-bottom: 1rem;
     text-decoration: none;
     /* remove underline from link */
-    color: #52ABFC;
+    color: #2d79ca;
     background-color: white;
 }
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(94, 243, 154, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 #c0f3f7;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
@@ -122,7 +124,7 @@ input {
     padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(94, 243, 154, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 #c0f3f7;
 
 }
 
