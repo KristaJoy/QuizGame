@@ -29,7 +29,7 @@ let questions = [
         choice3: "Onion",
         choice4: "Grass",
         answer: 3,
-        caption: "<p><strong>ONION:  </strong>Chicago is derived from a French rendering of the indigenous Miami-Illinois word <i>shikaakwa</i> for a wild relative of the onion (also known as ramps). According to explorer Henri Joutel's diary in September 1687, 'called \"Chicagou\" which... has taken this name because of the quanity of garlic which grows...'</p>"
+        caption: "<p><strong>ONION:  </strong>Chicago is derived from a French rendering of the indigenous Miami-Illinois word <i>shikaakwa</i> for a wild relative of the onion (also known as ramps). According to explorer Henri Joutel's diary in September 1687, \"called \'Chicagou\' which... has taken this name because of the quantity of garlic which grows...\"</p>"
     },
     {
         question: "Who was the first non-indigenous settler of Chicago?",
@@ -38,7 +38,7 @@ let questions = [
         choice3: "Abraham Lincoln",
         choice4: "René LaSalle",
         answer: 2,
-        caption: "<p><strong>JEAN BAPTISTE POINT DU SABLE:  </strong>Considered the Founder of Chicago, Point du Sable's settlement site from the 1780s is marked near the Chicago River on Michigan Avenue. Little is known of him before he settled there other than his African descent. He married a native american woman, eventually selling his Chicago property in 1800 and moving to St. Charles, Missouri Territory where he died in 1818.</p>"
+        caption: "<p><strong>JEAN BAPTISTE POINT DU SABLE:  </strong>Considered the Founder of Chicago, Point du Sable's settlement site from the 1780s is marked near the Chicago River on Michigan Avenue. Little is known of him before he settled there other than his African descent. He married a Native American woman, eventually selling his Chicago property in 1800 and moving to St. Charles, Missouri Territory where he died in 1818.</p>"
     },
     {
         question: "The City of Chicago completed what historic project in 1900?",
@@ -47,7 +47,7 @@ let questions = [
         choice3: "The first 20-story building in the world.",
         choice4: "Reversing the flow of the Chicago River.",
         answer: 4,
-        caption: "<p><strong>REVERSING THE RIVER:  </strong>Using canal locks, the main stem (into the lake) and the south branch of the river both reversed their course. The system the city engineers created was named a 'Civil Engineering Monument of the Millennium' by the American Society of Civil Engineers (ASCE) in 1999.</p>"
+        caption: "<p><strong>REVERSING THE RIVER:  </strong>Using canal locks, the main stem (into the lake) and the south branch of the river both reversed their course. The system the city engineers created was named a \"Civil Engineering Monument of the Millennium\" by the American Society of Civil Engineers (ASCE) in 1999.</p>"
     },
     {
         question: "The Lincoln Park Zoo was founded in 1868 with the gift of which animals?",
@@ -74,7 +74,7 @@ let questions = [
         choice3: "Unify the Public School System",
         choice4: "Celebrate the 50 States of the Flag",
         answer: 1,
-        caption: "<p><strong>HELP SELL FLAGS:  </strong>The <i>Youth's Companion</i> magazine sold American flags to schools and wanted to sell more! The pledge was written by the magazine's promotional department and first recited at the opening ceremony of the Chicago World's Columbian Exposition of 1893 (originally set for 1892, the 400 year anniversary of Christopher Columbus). Notably, the original pledge did not have the phrase 'under God' but was added by Congress in 1954.</p>"
+        caption: "<p><strong>HELP SELL FLAGS:  </strong>The <i>Youth's Companion</i> magazine sold American flags to schools and wanted to sell more. The pledge was written by the magazine's promotional department and first recited at the opening ceremony of the Chicago World's Columbian Exposition of 1893 (originally set for 1892, the 400 year anniversary of Christopher Columbus). Notably, the original pledge did not have the phrase 'under God' but was added by Congress in 1954.</p>"
     },
     {
         question: "Chicago is home to approximately how many people?",
@@ -119,7 +119,7 @@ let questions = [
         choice3: "Baseball game",
         choice4: "Nuclear fission",
         answer: 1,
-        caption: "<p><strong>PRESIDENTIAL DEBATE:  </strong>The first televised presidential debate between Senator John F. Kennedy and Vice President Richard Nixon was broadcast from the Chicago CBS studios. A precursor event, televised four years earlier, was Eleanor Roosevelt and Senator Margaret Chase Smith debating the merits of Adlai Stevenson vs. Dwight Eisenhower for president.</p>"
+        caption: "<p><strong>PRESIDENTIAL DEBATE:  </strong>The first televised presidential debate between Senator John F. Kennedy and Vice President Richard Nixon was broadcast from the Chicago CBS studios on September 26, 1960. A debate for president had been televised four years earlier between surrogates Eleanor Roosevelt and Senator Margaret Chase Smith arguing Adlai Stevenson vs. President Dwight Eisenhower.</p>"
     }
 ];
 
