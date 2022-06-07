@@ -29,7 +29,7 @@ let questions = [
         choice3: "Salem",
         choice4: "Oregon City",
         answer: 3,
-        caption: "<p><strong>SALEM:  </strong>Oregon City was the first capital and the end of the Oregon Trail when Oregon was a Territory. Salem became its capital in 1852.</p>"
+        caption: "<p><strong>SALEM:  </strong>Oregon City was the first capital, and the end of the Oregon Trail when Oregon was a Territory. Salem became its capital in 1852.</p>"
     },
     {
         question: "In 1873 what destroyed much of downtown Portland?",
@@ -38,7 +38,7 @@ let questions = [
         choice3: "Wind Storm",
         choice4: "Fire",
         answer: 4,
-        caption: "<p><strong>FIRE:  </strong>Early morning August 2, 1873 a fire started near SW 1st and Taylor at a furniture store, and destroyed over 20 square blocks.</p>"
+        caption: "<p><strong>FIRE:  </strong>Early morning August 2, 1873 a fire started near SW 1st and Taylor at a furniture store, and destroyed over 20 square blocks. Some believe it was from the furniture varnish catching fire, others believed it was started by anti-Chinese arsonists. Rather than addressing structural or leadership issues, in response the city purchased a louder 4,000-pound warning bell.</p>"
     },
     {
         question: "Portland's nickname is:",
@@ -47,7 +47,7 @@ let questions = [
         choice3: "Forest Park",
         choice4: "Coffeetown",
         answer: 1,
-        caption: "<p><strong>CITY OF ROSES:  </strong>See roses around town at the International Rose Test Garden, the Ladd's Addition neighborhood, and Peninsula Park. Other unofficial nicknames are: 'PDX' referencing the airport code, 'Stumptown' from the logging industry, 'Rip City' for the TrailBlazers, 'Bridgetown' for its 10 bridges over the Willamette river, and 'P-town'.</p>"
+        caption: "<p><strong>CITY OF ROSES:  </strong>See roses around town at the International Rose Test Garden, Ladd's Addition neighborhood, and Peninsula Park. Other unofficial nicknames are: 'PDX' referencing the airport code, 'Stumptown' from the logging industry, 'Rip City' for the TrailBlazers, 'Bridgetown' for its 10 bridges over the Willamette river, and 'P-town'.</p>"
     },
     {
         question: "Before European settlement, the Portland basin area was populated by which indigenous group?",
@@ -83,7 +83,7 @@ let questions = [
         choice3: "A volcano",
         choice4: "Goat farm",
         answer: 3,
-        caption: "<p><strong>A VOLCANO:  </strong>Mt. Tabor is an extinct volcano which is home to a park with walking trails, large decommissioned open water reservoirs, and a beautiful view over the city. Mt. Tabor was named by an Oregon CIty pioneer's son after the Mt. Tabor near Nazareth, Israel.</p>"
+        caption: "<p><strong>A VOLCANO:  </strong>Mt. Tabor is an extinct volcano which is home to a park with walking trails, large decommissioned open water reservoirs, and a beautiful view over the city. Mt. Tabor was named by an Oregon City pioneer's son after the Mt. Tabor near Nazareth, Israel.</p>"
     },
     {
         question: "Portland was named on a coin toss between being named after Portland, Maine, or this city:",
@@ -95,13 +95,13 @@ let questions = [
         caption: "<p><strong>BOSTON:  </strong>In 1845 Portland's two founders did a best of 3 coin toss — Francis Pettygrove who was from Portland, Maine, and Asa Lovejoy who was from Boston, Massachusetts. Streets in the Alphabet District of Portland are named after many city founders, NW Pettygrove St. and NW Lovejoy St. among them. </p>"
     },
     {
-        question: "Portland had the first American team to compete in what event?",
+        question: "Portland had the first American team to compete in which event?",
         choice1: "Rugby World Cup",
         choice2: "Cricket World Cup",
         choice3: "Tour de France",
         choice4: "The Stanley Cup",
         answer: 4,
-        caption: "<p><strong>THE STANLEY CUP:  </strong>The Portland Rosebuds won the league championship and their name is on the Stanley Cup, but lost to the Montreal Canadiens in the 1916 Stanley Cup final. The team folded after four seasons. The team was revived in 1925 but was sold the next season to form the Chicago Blackhawks expansion team.</p>"
+        caption: "<p><strong>THE STANLEY CUP:  </strong>The Portland Rosebuds won the league championship (their name is on the Stanley Cup!), but lost to the Montreal Canadiens in the 1916 Stanley Cup final. The team folded after four seasons. The team was revived in 1925 but was sold the next season to form the Chicago Blackhawks expansion team.</p>"
     },
     {
         question: "What game-changing product was invented in Portland?",
@@ -119,7 +119,7 @@ let questions = [
         choice3: "55.8",
         choice4: "39.3",
         answer: 1,
-        caption: "<p><strong>43.7:  </strong>Portland is known for being rainy, but cities like Houston (55.6 in), New Orleans (63.4 in), and Atlanta (50.4 in) get more. More likely to drizzle than downpour Portland does have some of the most days <i>with</i> rain.</p>"
+        caption: "<p><strong>43.7:  </strong>Portland is known for being rainy, but cities like Houston (55.6 in), New Orleans (63.4 in), and Atlanta (50.4 in) get more. More likely to drizzle than downpour, Portland does have some of the most days <i>with</i> rain.</p>"
     }
 ];
 
@@ -138,7 +138,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end of the page
-        return window.location.assign("/end.html");
+        return window.location.assign("./end.html");
     }
     
     //question progress text and bar

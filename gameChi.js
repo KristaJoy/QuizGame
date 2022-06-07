@@ -56,7 +56,7 @@ let questions = [
         choice3: "Ostriches",
         choice4: "Deer",
         answer: 1,
-        caption: "<p><strong>SWANS:  </strong>Lincoln Park Commissioners were given two pairs of swans by New York Central Park's Board of Commissioners. Over 150 years old the Lincoln Park Zoo is the only free zoo in the country.</p>"
+        caption: "<p><strong>SWANS:  </strong>Lincoln Park Commissioners were given two pairs of swans by New York Central Park's Board of Commissioners. Over 150 years old, the Lincoln Park Zoo is the only free zoo in the country.</p>"
     },
     {
         question: "The Palmer House Hotel's kitchen created which treat for the 1893 Chicago World's Fair?",
@@ -119,7 +119,7 @@ let questions = [
         choice3: "Baseball game",
         choice4: "Nuclear fission",
         answer: 1,
-        caption: "<p><strong>PRESIDENTIAL DEBATE:  </strong>The first televised presidential debate between Senator John F. Kennedy and Vice President Richard Nixon was hosted in the Chicago CBS studios. A precursor was Eleanor Roosevelt and Senator Margaret Chase Smith debating the merits of Adlai Stevenson vs. Dwight Eisenhower for president on television four years earlier.</p>"
+        caption: "<p><strong>PRESIDENTIAL DEBATE:  </strong>The first televised presidential debate between Senator John F. Kennedy and Vice President Richard Nixon was broadcast from the Chicago CBS studios. A precursor event, televised four years earlier, was Eleanor Roosevelt and Senator Margaret Chase Smith debating the merits of Adlai Stevenson vs. Dwight Eisenhower for president.</p>"
     }
 ];
 
@@ -138,7 +138,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end of the page
-        return window.location.assign("/end.html");
+        return window.location.assign("./end.html");
     }
     
     //question progress text and bar
