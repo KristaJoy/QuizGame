@@ -74,7 +74,7 @@ let questions = [
         choice3: "Unify the Public School System",
         choice4: "Celebrate the 50 States of the Flag",
         answer: 1,
-        caption: "<p><strong>HELP SELL FLAGS:  </strong>The <i>Youth's Companion</i> magazine sold American flags to schools and wanted to sell more. The pledge was written by the magazine's promotional department and first recited at the opening ceremony of the Chicago World's Columbian Exposition of 1893 (originally set for 1892, the 400 year anniversary of Christopher Columbus). Notably, the original pledge did not have the phrase 'under God' but was added by Congress in 1954.</p>"
+        caption: "<p><strong>HELP SELL FLAGS:  </strong>The <i>Youth's Companion</i> magazine sold American flags to schools and wanted to sell more. The pledge was written by the magazine's promotional department and first recited at the opening ceremony of the Chicago World's Columbian Exposition of 1893 (originally set for 1892, the 400 year anniversary of Christopher Columbus). Notably, the original pledge did not have the phrase \"under God\" but was added by Congress in 1954.</p>"
     },
     {
         question: "Chicago is home to approximately how many people?",
@@ -101,7 +101,7 @@ let questions = [
         choice3: "The White City",
         choice4: "The Garden City",
         answer: 4,
-        caption: "<p><strong>THE GARDEN CITY:  </strong>While not a nickname, Chicago's motto is <i>urbs in horto</i> or 'city in a garden' celebrating the city's impressive park system. Almost 600 parks dot the neighborhoods around Chicago.</p>"
+        caption: "<p><strong>THE GARDEN CITY:  </strong>While not a nickname, Chicago's motto is <i>urbs in horto</i> or \"city in a garden\" celebrating the city's impressive park system. Almost 600 parks dot the neighborhoods around Chicago.</p>"
     },
     {
         question: "If you use this topping on your hot dog in Chicago you might make the chef cringe:",
@@ -119,7 +119,7 @@ let questions = [
         choice3: "Baseball game",
         choice4: "Nuclear fission",
         answer: 1,
-        caption: "<p><strong>PRESIDENTIAL DEBATE:  </strong>The first televised presidential debate between Senator John F. Kennedy and Vice President Richard Nixon was broadcast from the Chicago CBS studios on September 26, 1960. A debate for president had been televised four years earlier between surrogates Eleanor Roosevelt and Senator Margaret Chase Smith arguing Adlai Stevenson vs. President Dwight Eisenhower.</p>"
+        caption: "<p><strong>PRESIDENTIAL DEBATE:  </strong>The first televised presidential debate between Senator John F. Kennedy and Vice President Richard Nixon was broadcast from the Chicago CBS studios on September 26, 1960. Although, a debate for president had been televised four years earlier between surrogates Eleanor Roosevelt and Senator Margaret Chase Smith arguing Adlai Stevenson vs. President Dwight Eisenhower.</p>"
     }
 ];
 

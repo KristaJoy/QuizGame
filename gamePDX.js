@@ -65,7 +65,7 @@ let questions = [
         choice3: "Patrick Star",
         choice4: "Wile E. Coyote",
         answer: 2,
-        caption: "<p><strong>NED FLANDERS:  </strong>'Hi-Diddly-Ho, neighborinos!' Crossing I-405 at Flanders St., the bridge honors 'The Simpson's' character created by Portland native Matt Groening. He graduated from Lincoln High School in SW Portland.</p>"
+        caption: "<p><strong>NED FLANDERS:  </strong>'Hi-Diddly-Ho, neighborinos!' Crossing I-405 at Flanders St., the bridge honors a character from <i>The Simpsons</i> created by Portland native Matt Groening. He graduated from Lincoln High School in SW Portland.</p>"
     },
     {
         question: "While in Portland you can visit both the biggest and smallest one of these.",
